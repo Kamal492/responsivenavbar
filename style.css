@@ -1,0 +1,69 @@
+body{
+  margin:0;
+}
+.logo{
+  color: white;
+  text-align: center;
+  padding: 14px 2.5rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  float:left;
+}
+.topnav{
+  background-color:#256BE3;
+  padding:8px 15px;
+  overflow: hidden;
+}
+.link  {
+  float: right; /* keep the links in same line */
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 3rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.sidepanel {
+  height: 300px;
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top:0;
+  right:0;
+  background-color: rgba(37,107,227,0.9);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  text-align: center;
+}
+.sidepanel a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;/*hide underline */
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+
+}
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.icon{
+  display:none;
+}
+@media screen and (max-width: 600px) { /*If the size of the screen is less than 600px, it will show this style */
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 2.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+}
